@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#101426" />
+    <title>انتخاب برنامه‌ی قرار</title>
+    <link rel="stylesheet" href="css/page3.css" />
+    <script src="JS/page3.js" defer></script>
+  </head>
+  <body>
+    <div class="background">
+      <div class="glow glow-pink"></div>
+      <div class="glow glow-blue"></div>
+      <div class="glow glow-purple"></div>
+    </div>
+
+    <main class="page">
+      <section class="card">
+        <header class="header">
+          <div class="emoji">👟</div>
+          <h1>انتخاب هوشمندانه‌ای بود، پیاده‌روی عالیه!</h1>
+          <p class="subtitle">🍃 دوست داری چی بخوریم؟</p>
+        </header>
+
+        <form class="date-form" id="date-form">
+          <div class="food-menu">
+            <button
+              class="menu-toggle"
+              id="menu-toggle"
+              type="button"
+              aria-expanded="false"
+              aria-controls="menu-options"
+            >
+              <span id="selected-text">یک گزینه را انتخاب کنید...</span>
+              <span class="arrow">▾</span>
+            </button>
+
+            <div class="menu-options" id="menu-options" hidden>
+              <button class="menu-option" type="button" data-value="coffee">
+                <span>۱. ☕ قهوه</span>
+              </button>
+
+              <button class="menu-option" type="button" data-value="tea">
+                <span>۲. 🍵 چایی</span>
+              </button>
+
+              <button class="menu-option" type="button" data-value="dinner">
+                <span>۳. 🍔 شام</span>
+              </button>
+
+              <button class="menu-option" type="button" data-value="fresh-air">
+                <span>۴. 🌬️ هوای تازه!</span>
+              </button>
+            </div>
+          </div>
+
+          <button
+            class="submit-button"
+            id="submit-button"
+            type="submit"
+            disabled
+          >
+            ❤️ ثبت نهایی
+          </button>
+
+          <p class="message" id="message" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
